@@ -1,4 +1,4 @@
-# The YaST C++ Testing Image
+# The Libstorage-ng Testing Image
 
 [![Build Status](https://travis-ci.org/yast/ci-libstorage-ng-container.svg?branch=master)](https://travis-ci.org/yast/ci-libstorage-ng-container)
 
