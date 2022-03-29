@@ -19,7 +19,6 @@ RUN zypper --non-interactive install --no-recommends \
   automake \
   boost-devel \
   brp-check-suse \
-  brp-extract-appdata \
   build \
   ccache \
   doxygen \
