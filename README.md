@@ -2,17 +2,17 @@
 
 [![CI](https://github.com/yast/ci-libstorage-ng-container/actions/workflows/ci.yml/badge.svg?branch=master)](
 https://github.com/yast/ci-libstorage-ng-container/actions/workflows/ci.yml)
+[![OBS](https://github.com/yast/ci-libstorage-ng-container/actions/workflows/submit.yml/badge.svg)](https://github.com/yast/ci-libstorage-ng-container/actions/workflows/submit.yml)
 
 This git repository contains the configuration used to build the docker
-image used for [TravisCI](https://travis-ci.org/).
+image used for [GitHub Actions](https://docs.github.com/en/actions).
 The resulting docker image is available at https://registry.opensuse.org/.
 
 ## Automatic Rebuilds
 
 - The image is rebuilt whenever a commit it pushed to the `master` branch.
-- The [yast-ci-libstorage-ng-container-master](
-  https://ci.opensuse.org/view/Yast/job/yast-ci-libstorage-ng-container-master/)
-  Jenkins job copies the configuration to the [YaST:Head/ci-libstorage-ng-container](
+- The [submit.yml](./.github/workflows/submit.yml)
+  GitHub Action commits the configuration to the [YaST:Head/ci-libstorage-ng-container](
   https://build.opensuse.org/package/show/YaST:Head/ci-libstorage-ng-container)
   OBS project
 - The OBS tracks the dependencies and rebuilds the image if any dependant package
